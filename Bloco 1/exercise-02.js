@@ -1,5 +1,4 @@
 // Bilhete Único
-
 const FARE = 5.00;
 
 let balance = Number(prompt("Digite o saldo do cartão:"));
@@ -9,3 +8,5 @@ let change = balance % FARE;
 
 console.log("Você pode fazer " + trips + " viagem(s).");
 console.log("Sobra: R$" + change.toFixed(2));
+
+//math.floor arredonda para baixo, ou seja, pega o número inteiro mais próximo

@@ -1,14 +1,13 @@
-// Etanol ou gasolina?
+//ethanol ou gasolina
+let ethanolprice = Number(prompt("Digite o valor do Ethanol"));
+let gasolinaprice = Number(prompt("Digite o valor da Gasolina"));
 
-let ethanolPrice = Number(prompt("Digite o preço do etanol:"));
-let gasolinePrice = Number(prompt("Digite o preço da gasolina:"));
+let porcentagem = (ethanolprice / gasolinaprice) * 10;
 
-let percentage = (ethanolPrice / gasolinePrice) * 100;
-
-if (percentage <= 70) {
-    console.log("Abasteça com etanol.");
+if (porcentagem <= 70) {
+    console.log("Etanol compensa mais");
 } else {
-    console.log("Abasteça com gasolina.");
-}
+    console.log("Gasolina compensa mais");
+}    
 
-console.log("O etanol custa " + percentage.toFixed(2) + "% do preço da gasolina.");
+console.log("O etanol custa " + porcentagem.toFixed(2) + " % preço da gasolina");
